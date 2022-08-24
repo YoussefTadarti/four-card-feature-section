@@ -9,7 +9,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/four-card-section-with-grid-rEmUIkym-1)
-- Live Site URL: [Live Site at Vercel](https://yousseftadarti.github.io/frontend-mentor-challenges/)
+- Live Site URL: [Live Site at Vercel](https://yousseftadarti.github.io/four-card-feature-section/)
 
 ## Author
 - Github - [YoussefTadarti](https://github.com/YoussefTadarti)

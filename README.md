@@ -11,16 +11,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/four-card-section-with-grid-rEmUIkym-1)
 - Live Site URL: [Live Site at Vercel](https://yousseftadarti.github.io/frontend-mentor-challenges/)
 
-### Built with
-
-- Grid
-- Responsive Design
-- transition
-
-### What I learned
-
-Better use for grids and transitions.
-
 ## Author
 - Github - [YoussefTadarti](https://github.com/YoussefTadarti)
 - Frontend Mentor - [@YoussefTadarti](https://www.frontendmentor.io/profile/YoussefTadarti)

@@ -10,14 +10,12 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/four-card-section-with-grid-rEmUIkym-1)
 - Live Site URL: [Live Site at Vercel](https://yousseftadarti.github.io/frontend-mentor-challenges/)
-## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- transition
 - Grid
 - Responsive Design
+- transition
 
 ### What I learned
 

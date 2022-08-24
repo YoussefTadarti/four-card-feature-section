@@ -1,0 +1,140 @@
+/*-----------General style-----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  /*------Colors-------*/
+
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+.container {
+  max-width: 375px;
+  margin: 5rem auto;
+}
+
+/* ----header---- */
+header h2 {
+  color: var(--Grayish-Blue);
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  font-size: 1.82rem;
+}
+header h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 2.04rem;
+  margin-top: 0.5rem;
+}
+header p {
+  color: var(--Grayish-Blue);
+  margin-top: 1rem;
+  font-size: 1.37rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+/*-------------Cards Design--------------*/
+article {
+  display: grid;
+  margin: 5rem auto;
+}
+article .card {
+  background-color: var(--Very-Light-Gray);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 1px 3px 5px 1px var(--Grayish-Blue);
+  overflow: hidden;
+  position: relative;
+}
+article .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+}
+article .first.card::before {
+  background-color: var(--Cyan);
+}
+article .second.card::before {
+  background-color: var(--Red);
+}
+article .third.card::before {
+  background-color: var(--Orange);
+}
+article .last.card::before {
+  background-color: var(--Blue);
+}
+
+article .card h3 {
+  color: var(--Very-Dark-Blue);
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+article .card p {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--Grayish-Blue);
+}
+article .card img {
+  margin-top: 1rem;
+  float: right;
+}
+
+/* ---------Large Screen-------------- */
+@media (min-width: 1440px) {
+  /*-------------header-----------------*/
+  header {
+    text-align: center;
+  }
+  header p {
+    margin: 0 12.5rem;
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 1440px;
+    margin: 5rem auto;
+  }
+  /*-------------Cards Design--------------*/
+  article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  article .first {
+    transform: translateY(150px);
+  }
+
+  article .third {
+    transform: translateY(150px);
+  }
+  article .last {
+    transform: translateX(300px);
+  }
+
+  article .card h3 {
+    color: var(--Very-Dark-Blue);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+}

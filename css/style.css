@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
 /*-----------General style-----------------*/
 * {
   margin: 0;
@@ -7,6 +9,7 @@
 body {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
 }
 :root {
   /*------Colors-------*/
@@ -24,45 +27,52 @@ body {
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 .container {
-  max-width: 375px;
+  max-width: 33.75rem;
   margin: 5rem auto;
 }
 
 /* ----header---- */
-header h2 {
-  color: var(--Grayish-Blue);
-  font-weight: 100;
-  letter-spacing: 1.5px;
-  font-size: 1.82rem;
-}
-header h1 {
-  color: var(--Very-Dark-Blue);
-  font-size: 2.04rem;
-  margin-top: 0.5rem;
-}
-header p {
-  color: var(--Grayish-Blue);
-  margin-top: 1rem;
-  font-size: 1.37rem;
-  line-height: 2rem;
+header{
   text-align: center;
 }
-
-/*-------------Cards Design--------------*/
-article {
-  display: grid;
-  margin: 5rem auto;
+header h2,
+header h1 {
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+  font-size: 2.25rem;
+  letter-spacing: .0156rem;
+  color: var(--Very-Dark-Blue);
 }
-article .card {
-  background-color: var(--Very-Light-Gray);
+header h2 {
+  font-weight: 600;
+  line-height: 3rem;
+}
+header p {
+  font-weight: 400;
+  font-size: .9375rem;
+  line-height: 1.5625rem;
+  padding: 16px;
+  color: var(--Grayish-Blue);
+}
+
+/*-------------Cards Section--------------*/
+.cards-container{
+  display: grid;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.card{
+  width: 21.875rem;
+}
+.cards-container .card {
   border-radius: 5px;
   padding: 2rem;
   margin: 1rem;
-  box-shadow: 1px 3px 5px 1px var(--Grayish-Blue);
+  box-shadow: 0 .9375rem 1.875rem -.6875rem rgba(131, 166, 210, .5);
   overflow: hidden;
   position: relative;
 }
-article .card::before {
+.cards-container .card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -70,68 +80,57 @@ article .card::before {
   height: 0.25rem;
   width: 100%;
 }
-article .first.card::before {
+.cards-container .cyan-card.card::before {
   background-color: var(--Cyan);
 }
-article .second.card::before {
+.cards-container .yellow-card.card::before {
   background-color: var(--Red);
 }
-article .third.card::before {
+.cards-container .orange-card.card::before {
   background-color: var(--Orange);
 }
-article .last.card::before {
+.cards-container .blue-card.card::before {
   background-color: var(--Blue);
 }
 
-article .card h3 {
+.cards-container .card h3 {
   color: var(--Very-Dark-Blue);
   text-transform: capitalize;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
-article .card p {
+.cards-container .card p {
   color: var(--Very-Dark-Blue);
   margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--Grayish-Blue);
 }
-article .card img {
+.cards-container .card img {
   margin-top: 1rem;
   float: right;
 }
 
 /* ---------Large Screen-------------- */
 @media (min-width: 1440px) {
-  /*-------------header-----------------*/
-  header {
-    text-align: center;
-  }
-  header p {
-    margin: 0 12.5rem;
-    font-size: 1.2rem;
-  }
-  .container {
-    max-width: 1440px;
-    margin: 5rem auto;
-  }
+
   /*-------------Cards Design--------------*/
-  article {
+  .cards-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  article .first {
+   .cards-container .cyan-card {
     transform: translateY(150px);
   }
 
-  article .third {
-    transform: translateY(150px);
+  .cards-container .orange-card {
+    transform: translateY(267px) translateX(-382px);
   }
-  article .last {
-    transform: translateX(480px);
+  .cards-container .blue-card {
+    transform: translateX(764px) translateY(-118px);
   }
 
-  article .card h3 {
+  .cards-container .card h3 {
     color: var(--Very-Dark-Blue);
     text-transform: capitalize;
     margin-bottom: 0.5rem;

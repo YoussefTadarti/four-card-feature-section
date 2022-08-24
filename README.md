@@ -42,5 +42,5 @@ Better use for grids and flexboxes.
 
 
 ## Author
-- Github - [YoussefTadarti]https://github.com/YoussefTadarti
+- Github - [YoussefTadarti](https://github.com/YoussefTadarti)
 - Frontend Mentor - [@YoussefTadarti](https://www.frontendmentor.io/profile/YoussefTadarti)

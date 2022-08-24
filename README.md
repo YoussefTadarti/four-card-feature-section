@@ -11,7 +11,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -21,25 +20,20 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/4-card-feature-section-vanilla-css-custom-design-glassmorphism-8VlJAG8Sse)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/four-card-section-with-grid-rEmUIkym-1)
 - Live Site URL: [Live Site at Vercel](https://four-card-feature-section-gamma-inky.vercel.app/)
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- Flexbox
+- transition
 - Grid
 - Responsive Design
 
 ### What I learned
 
-Better use for grids and flexboxes.
-
-### Useful resources
-
-- [Glassmorphism](https://css.glass/) - Order Property
-
+Better use for grids and transitions.
 
 ## Author
 - Github - [YoussefTadarti](https://github.com/YoussefTadarti)
